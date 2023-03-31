@@ -1,4 +1,4 @@
-# Simple-GIS-web-app using openlayers, Html, css and Javascript. The web application was created to showcase Kenya bareareas and also show how to add various web app functionalities such as zoom, addLocation and such.
+# Simple-GIS-web-app using openlayers, Html, css and Javascript. The web application was created to showcase Kenya bareareas and also show how to add various web app functionalities such as zoom, addLocation etc.
 <!DOCTYPE html>
 <html lang="en">
 
