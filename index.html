@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Mapping Application</title>
+    <link rel="stylesheet" href="resources/ol/ol.css">
+    <link rel="stylesheet" href="resources/layerswitcher/ol-layerswitcher.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+    </div>
+
+    <div class="attQueryDiv" id="attQueryDiv">
+        <div class="headerDiv" id="headerDiv">
+            <label for="">Attribute Query</label>
+        </div><br>
+        <label for="">Select Layer</label>
+        <select name="selectLayer" id="selectLayer">
+        </select><br><br>
+
+        <label for="">Select Attribute</label>
+        <select name="selectAttribute" id="selectAttribute">
+        </select><br><br>
+
+        <label for="">Select Operator</label>
+        <select name="selectOperator" id="selectOperator">
+        </select><br><br>
+
+        <label for="">Enter Value</label>
+        <input type="text" name="enterValue" id="enterValue">
+        </select><br><br>
+
+        <button type="button" id="attQryRun" class="attQryRun" onclick="attributeQuery()">Run</button>
+    </div>
+
+    <div class="attListDiv" id="attListDiv">
+    </div>
+
+    <script src="resources/ol/ol.js"></script>
+    <script src="resources/layerswitcher/ol-layerswitcher.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
